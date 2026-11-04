@@ -1,6 +1,10 @@
 # prelegal
 A platform for drafting common legal agreement
 
+## Mutual NDA creator
+
+`frontend/` is a Next.js prototype that turns the mutual NDA template into a form, shows the filled-in agreement and lets the user download it as a PDF. See [frontend/README.md](frontend/README.md) to run it.
+
 ## Template dataset
 
 `templates/` holds the legal document templates the system fills in and adapts for each user.
