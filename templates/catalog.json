@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "placeholder_syntax": "{{variable_name}}",
+  "templates": [
+    {
+      "id": "mutual-nda",
+      "title": "Mutual Non-Disclosure Agreement",
+      "category": "confidentiality",
+      "description": "Two parties agree to protect each other's confidential information shared for a stated purpose.",
+      "file": "mutual-nda.md",
+      "variables": [
+        {"name": "effective_date", "label": "Effective date", "type": "date", "example": "1 January 2027"},
+        {"name": "party_a_name", "label": "Party A legal name", "type": "string", "example": "Acme Technologies Pvt Ltd"},
+        {"name": "party_a_address", "label": "Party A address", "type": "string", "example": "12 MG Road, Bengaluru 560001, India"},
+        {"name": "party_b_name", "label": "Party B legal name", "type": "string", "example": "Globex Solutions LLP"},
+        {"name": "party_b_address", "label": "Party B address", "type": "string", "example": "45 Park Street, Kolkata 700016, India"},
+        {"name": "purpose", "label": "Purpose of the disclosure", "type": "text", "example": "evaluating a potential software development partnership"},
+        {"name": "term_years", "label": "Agreement term (years)", "type": "number", "example": "2"},
+        {"name": "confidentiality_period_years", "label": "Confidentiality period after termination (years)", "type": "number", "example": "3"},
+        {"name": "governing_law", "label": "Governing law", "type": "string", "example": "India"},
+        {"name": "party_a_signatory_name", "label": "Party A signatory name", "type": "string", "example": "Priya Sharma"},
+        {"name": "party_a_signatory_title", "label": "Party A signatory title", "type": "string", "example": "Director"},
+        {"name": "party_b_signatory_name", "label": "Party B signatory name", "type": "string", "example": "Rahul Mehta"},
+        {"name": "party_b_signatory_title", "label": "Party B signatory title", "type": "string", "example": "Partner"}
+      ]
+    },
+    {
+      "id": "one-way-nda",
+      "title": "Non-Disclosure Agreement (One-Way)",
+      "category": "confidentiality",
+      "description": "One party discloses confidential information and the other agrees to protect it.",
+      "file": "one-way-nda.md",
+      "variables": [
+        {"name": "effective_date", "label": "Effective date", "type": "date", "example": "1 January 2027"},
+        {"name": "discloser_name", "label": "Disclosing party legal name", "type": "string", "example": "Acme Technologies Pvt Ltd"},
+        {"name": "discloser_address", "label": "Disclosing party address", "type": "string", "example": "12 MG Road, Bengaluru 560001, India"},
+        {"name": "recipient_name", "label": "Receiving party legal name", "type": "string", "example": "Anita Desai"},
+        {"name": "recipient_address", "label": "Receiving party address", "type": "string", "example": "7 Lake View, Pune 411001, India"},
+        {"name": "purpose", "label": "Purpose of the disclosure", "type": "text", "example": "reviewing the Disclosing Party's product roadmap as a prospective adviser"},
+        {"name": "confidentiality_period_years", "label": "Confidentiality period (years)", "type": "number", "example": "3"},
+        {"name": "governing_law", "label": "Governing law", "type": "string", "example": "India"},
+        {"name": "discloser_signatory_name", "label": "Disclosing party signatory name", "type": "string", "example": "Priya Sharma"},
+        {"name": "discloser_signatory_title", "label": "Disclosing party signatory title", "type": "string", "example": "Director"},
+        {"name": "recipient_signatory_name", "label": "Receiving party signatory name", "type": "string", "example": "Anita Desai"},
+        {"name": "recipient_signatory_title", "label": "Receiving party signatory title", "type": "string", "example": "Individual"}
+      ]
+    },
+    {
+      "id": "independent-contractor-agreement",
+      "title": "Independent Contractor Agreement",
+      "category": "services",
+      "description": "Engages a contractor to provide services, covering payment, IP ownership, confidentiality and termination.",
+      "file": "independent-contractor-agreement.md",
+      "variables": [
+        {"name": "effective_date", "label": "Effective date", "type": "date", "example": "1 January 2027"},
+        {"name": "client_name", "label": "Client legal name", "type": "string", "example": "Acme Technologies Pvt Ltd"},
+        {"name": "client_address", "label": "Client address", "type": "string", "example": "12 MG Road, Bengaluru 560001, India"},
+        {"name": "contractor_name", "label": "Contractor legal name", "type": "string", "example": "Vikram Rao"},
+        {"name": "contractor_address", "label": "Contractor address", "type": "string", "example": "22 Hill Road, Mumbai 400050, India"},
+        {"name": "services_description", "label": "Description of services", "type": "text", "example": "Design and build a marketing website, including five page templates and a contact form."},
+        {"name": "end_date", "label": "End date", "type": "date", "example": "30 June 2027"},
+        {"name": "compensation", "label": "Compensation", "type": "string", "example": "INR 1,50,000 per month"},
+        {"name": "invoice_frequency", "label": "Invoice frequency", "type": "string", "example": "monthly"},
+        {"name": "payment_terms_days", "label": "Payment terms (days)", "type": "number", "example": "30"},
+        {"name": "notice_period_days", "label": "Termination notice period (days)", "type": "number", "example": "15"},
+        {"name": "governing_law", "label": "Governing law", "type": "string", "example": "India"},
+        {"name": "client_signatory_name", "label": "Client signatory name", "type": "string", "example": "Priya Sharma"},
+        {"name": "client_signatory_title", "label": "Client signatory title", "type": "string", "example": "Director"},
+        {"name": "contractor_signatory_name", "label": "Contractor signatory name", "type": "string", "example": "Vikram Rao"}
+      ]
+    },
+    {
+      "id": "employment-offer-letter",
+      "title": "Employment Offer Letter",
+      "category": "employment",
+      "description": "Offers a candidate a position, setting out role, start date, pay, benefits, probation and notice.",
+      "file": "employment-offer-letter.md",
+      "variables": [
+        {"name": "company_name", "label": "Company legal name", "type": "string", "example": "Acme Technologies Pvt Ltd"},
+        {"name": "company_address", "label": "Company address", "type": "string", "example": "12 MG Road, Bengaluru 560001, India"},
+        {"name": "letter_date", "label": "Letter date", "type": "date", "example": "15 December 2026"},
+        {"name": "candidate_name", "label": "Candidate name", "type": "string", "example": "Neha Kapoor"},
+        {"name": "candidate_address", "label": "Candidate address", "type": "string", "example": "9 Rose Avenue, Delhi 110001, India"},
+        {"name": "job_title", "label": "Job title", "type": "string", "example": "Senior Software Engineer"},
+        {"name": "manager_name", "label": "Manager name", "type": "string", "example": "Arjun Iyer"},
+        {"name": "manager_title", "label": "Manager title", "type": "string", "example": "Head of Engineering"},
+        {"name": "start_date", "label": "Start date", "type": "date", "example": "1 February 2027"},
+        {"name": "work_location", "label": "Work location", "type": "string", "example": "the Company's Bengaluru office, with up to two days per week remote"},
+        {"name": "employment_type", "label": "Employment type", "type": "string", "example": "full-time, permanent"},
+        {"name": "working_hours", "label": "Working hours", "type": "string", "example": "9:30 am to 6:30 pm, Monday to Friday"},
+        {"name": "salary", "label": "Salary", "type": "string", "example": "INR 24,00,000 per annum"},
+        {"name": "pay_frequency", "label": "Pay frequency", "type": "string", "example": "monthly"},
+        {"name": "benefits", "label": "Benefits", "type": "text", "example": "group health insurance, 24 days of paid leave per year and provident fund contributions"},
+        {"name": "probation_period", "label": "Probation period", "type": "string", "example": "six months"},
+        {"name": "notice_period", "label": "Notice period", "type": "string", "example": "two months'"},
+        {"name": "offer_expiry_date", "label": "Offer expiry date", "type": "date", "example": "22 December 2026"},
+        {"name": "governing_law", "label": "Governing law", "type": "string", "example": "India"},
+        {"name": "signatory_name", "label": "Company signatory name", "type": "string", "example": "Priya Sharma"},
+        {"name": "signatory_title", "label": "Company signatory title", "type": "string", "example": "Director"}
+      ]
+    },
+    {
+      "id": "website-terms-of-service",
+      "title": "Website Terms of Service",
+      "category": "online",
+      "description": "Terms governing use of a website or online service, including acceptable use, IP and liability.",
+      "file": "website-terms-of-service.md",
+      "variables": [
+        {"name": "last_updated_date", "label": "Last updated date", "type": "date", "example": "1 January 2027"},
+        {"name": "website_url", "label": "Website URL", "type": "url", "example": "https://www.example.com"},
+        {"name": "company_name", "label": "Company legal name", "type": "string", "example": "Acme Technologies Pvt Ltd"},
+        {"name": "minimum_age", "label": "Minimum user age", "type": "number", "example": "18"},
+        {"name": "privacy_policy_url", "label": "Privacy policy URL", "type": "url", "example": "https://www.example.com/privacy"},
+        {"name": "governing_law", "label": "Governing law", "type": "string", "example": "India"},
+        {"name": "dispute_venue", "label": "Courts with jurisdiction", "type": "string", "example": "Bengaluru, Karnataka"},
+        {"name": "contact_email", "label": "Contact email", "type": "email", "example": "legal@example.com"}
+      ]
+    },
+    {
+      "id": "privacy-policy",
+      "title": "Privacy Policy",
+      "category": "online",
+      "description": "Explains what personal information a website or service collects and how it is used, shared and protected.",
+      "file": "privacy-policy.md",
+      "variables": [
+        {"name": "last_updated_date", "label": "Last updated date", "type": "date", "example": "1 January 2027"},
+        {"name": "company_name", "label": "Company legal name", "type": "string", "example": "Acme Technologies Pvt Ltd"},
+        {"name": "website_url", "label": "Website URL", "type": "url", "example": "https://www.example.com"},
+        {"name": "data_collected_directly", "label": "Information users provide directly", "type": "text", "example": "When you create an account or contact us, we collect your name, email address, phone number and any other information you choose to provide."},
+        {"name": "third_party_services", "label": "Third-party service providers", "type": "text", "example": "Amazon Web Services (hosting), Razorpay (payments) and Google Analytics (analytics)"},
+        {"name": "retention_period", "label": "Data retention period", "type": "string", "example": "as long as your account is active and for up to three years afterwards"},
+        {"name": "minimum_age", "label": "Minimum user age", "type": "number", "example": "18"},
+        {"name": "contact_email", "label": "Contact email", "type": "email", "example": "privacy@example.com"},
+        {"name": "company_address", "label": "Company address", "type": "string", "example": "12 MG Road, Bengaluru 560001, India"}
+      ]
+    },
+    {
+      "id": "payment-demand-letter",
+      "title": "Demand Letter for Payment",
+      "category": "disputes",
+      "description": "Formally demands payment of an overdue amount by a deadline before further action is taken.",
+      "file": "payment-demand-letter.md",
+      "variables": [
+        {"name": "sender_name", "label": "Sender legal name", "type": "string", "example": "Acme Technologies Pvt Ltd"},
+        {"name": "sender_address", "label": "Sender address", "type": "string", "example": "12 MG Road, Bengaluru 560001, India"},
+        {"name": "letter_date", "label": "Letter date", "type": "date", "example": "4 November 2026"},
+        {"name": "recipient_name", "label": "Recipient name", "type": "string", "example": "Initech Retail Pvt Ltd"},
+        {"name": "recipient_address", "label": "Recipient address", "type": "string", "example": "3 Station Road, Chennai 600001, India"},
+        {"name": "invoice_reference", "label": "Invoice or contract reference", "type": "string", "example": "Invoice No. INV-2026-042 dated 1 August 2026"},
+        {"name": "amount_due", "label": "Amount due", "type": "string", "example": "INR 3,40,000"},
+        {"name": "goods_or_services", "label": "Goods or services supplied", "type": "text", "example": "software development services delivered in July 2026"},
+        {"name": "original_due_date", "label": "Original due date", "type": "date", "example": "31 August 2026"},
+        {"name": "payment_deadline", "label": "Payment deadline", "type": "date", "example": "18 November 2026"},
+        {"name": "payment_method", "label": "Payment method", "type": "text", "example": "bank transfer to account no. 000123456789, IFSC ABCD0001234"},
+        {"name": "sender_contact", "label": "Sender contact details", "type": "string", "example": "accounts@acme.example or +91 80 1234 5678"},
+        {"name": "sender_signatory_name", "label": "Signatory name", "type": "string", "example": "Priya Sharma"},
+        {"name": "sender_signatory_title", "label": "Signatory title", "type": "string", "example": "Director"}
+      ]
+    },
+    {
+      "id": "cease-and-desist-letter",
+      "title": "Cease and Desist Letter",
+      "category": "disputes",
+      "description": "Demands that the recipient stop specified infringing or harmful conduct by a deadline.",
+      "file": "cease-and-desist-letter.md",
+      "variables": [
+        {"name": "sender_name", "label": "Sender legal name", "type": "string", "example": "Acme Technologies Pvt Ltd"},
+        {"name": "sender_address", "label": "Sender address", "type": "string", "example": "12 MG Road, Bengaluru 560001, India"},
+        {"name": "letter_date", "label": "Letter date", "type": "date", "example": "4 November 2026"},
+        {"name": "recipient_name", "label": "Recipient name", "type": "string", "example": "Copycat Apps Pvt Ltd"},
+        {"name": "recipient_address", "label": "Recipient address", "type": "string", "example": "8 Market Lane, Hyderabad 500001, India"},
+        {"name": "subject_matter", "label": "Subject of the letter", "type": "string", "example": "Unauthorised use of the ACME trademark"},
+        {"name": "background", "label": "Background", "type": "text", "example": "Acme Technologies Pvt Ltd is the registered owner of the ACME trademark (Registration No. 1234567), which it has used continuously since 2018 for its software products."},
+        {"name": "infringing_conduct", "label": "Description of the infringing conduct", "type": "text", "example": "Marketing a mobile application under the name \"ACME Planner\" on the Google Play Store and on your website."},
+        {"name": "rights_infringed", "label": "Rights infringed", "type": "string", "example": "its registered trademark rights"},
+        {"name": "additional_demands", "label": "Additional demands", "type": "text", "example": "remove the application and all materials bearing the ACME mark from sale and from your website"},
+        {"name": "response_deadline", "label": "Response deadline", "type": "date", "example": "18 November 2026"},
+        {"name": "sender_contact", "label": "Sender contact details", "type": "string", "example": "legal@acme.example"},
+        {"name": "sender_signatory_name", "label": "Signatory name", "type": "string", "example": "Priya Sharma"},
+        {"name": "sender_signatory_title", "label": "Signatory title", "type": "string", "example": "Director"}
+      ]
+    }
+  ]
+}
